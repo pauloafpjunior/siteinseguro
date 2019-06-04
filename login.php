@@ -27,7 +27,6 @@ if (!isset($usuario) || !isset($senha)) {
 
     $sql = "SELECT * FROM usuario WHERE usuario = '$usuario' AND senha = '$hashSenha'";
 
-    echo $sql;
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
